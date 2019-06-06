@@ -66,15 +66,19 @@ void swapbubble(Fabricante *vet, int i){
 }
 
 void bubblesort(Fabricante *vet, int cont){
-	int i;
-	int trocou;
+	int i, trocou;
+	int aux=0;
 	do{
 		cont--;
 		trocou=0;
 		for(i=0; i<cont; i++){
-			if()
+		if(strcmp(vet[i].nome, vet[i+1].nome)==1){
+			
+		} else if(strcmp(vet[i].nome, vet[i+1].nome)==0){
+				aux++;
+		} else if(){
 		}
-	}
+	}while(trocou);
 }
 
 void imprimeDados(Fabricante *vet, int cont){
@@ -92,4 +96,4 @@ int main(){
 	lerDados(fabricantes);
 	imprimeDados(fabricantes, cont);
 	return 0;
-	}
+}
